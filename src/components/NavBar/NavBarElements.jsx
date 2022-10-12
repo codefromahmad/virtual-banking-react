@@ -5,11 +5,12 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: transparent;
   position: sticky;
   top: 0;
   color: #fff;
   height: 80px;
+  /* margin-top: -80px; */
   width: 100%;
   z-index: 10;
 
