@@ -11,10 +11,10 @@ import {
   MobileMenu,
 } from "./NavBarElements";
 
-const NavBar = () => {
+const NavBar = ({ isOpen, toggle }) => {
   return (
     <>
-      <Nav>
+      <Nav isOpen={isOpen}>
         <NavBarContainer>
           <NavLogo>dalla</NavLogo>
           <NavMenu>
@@ -26,7 +26,7 @@ const NavBar = () => {
           <NavBtnWrapper>
             <NavBtn>Sign In</NavBtn>
           </NavBtnWrapper>
-          <MobileMenuWrapper>
+          <MobileMenuWrapper onClick={toggle}>
             <MobileMenu />
           </MobileMenuWrapper>
         </NavBarContainer>

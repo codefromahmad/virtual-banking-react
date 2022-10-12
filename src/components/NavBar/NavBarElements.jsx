@@ -81,18 +81,21 @@ export const NavBtn = styled.div`
 
 export const MobileMenuWrapper = styled.div`
   display: none;
+  padding: 9px 11px;
   cursor: pointer;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    border-radius: 50%;
+    background: #464646;
+  }
+
   @media screen and (max-width: 768px) {
     display: block;
   }
 `;
 
 export const MobileMenu = styled(FaBars)`
-  font-size: 1.8rem;
-  /* &:hover {
-    transition: all 0.2s ease-in-out;
-    border-radius: 10px;
-    padding: 5px;
-    background: #464646;
-  } */
+  font-size: 2rem;
+  color: #fff;
 `;
