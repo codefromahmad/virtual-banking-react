@@ -21,16 +21,48 @@ const NavBar = ({ scroll, isOpen, toggle }) => {
             dalla
           </NavLogo>
           <NavMenu>
-            <NavLink smooth={true} to="about">
+            <NavLink
+              to="about"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              activeClass="active"
+            >
               About
             </NavLink>
-            <NavLink smooth={true} to="discovery">
+            <NavLink
+              to="discovery"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              activeClass="active"
+            >
               Discovery
             </NavLink>
-            <NavLink smooth={true} to="services">
+            <NavLink
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              activeClass="active"
+              to="services"
+            >
               Services
             </NavLink>
-            <NavLink smooth={true} to="signup">
+            <NavLink
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              activeClass="active"
+              to="signup"
+            >
               Sign Up
             </NavLink>
           </NavMenu>

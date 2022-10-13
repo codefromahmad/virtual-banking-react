@@ -5,19 +5,18 @@ export const ServiceContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 760px) {
-    height: 700px;
-  }
+  padding-bottom: 120px;
 `;
 export const ServiceWrapper = styled.div`
   width: 100%;
   max-width: 1100px;
+  padding: 0px 20px;
 `;
 
 export const ServiceH1 = styled.h1`
   font-size: 2rem;
   font-weight: bold;
-  padding: 50px 0px;
+  padding: 100px 0px;
   text-align: center;
 
   @media screen and (max-width: 460px) {

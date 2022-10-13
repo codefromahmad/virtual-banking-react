@@ -62,6 +62,10 @@ export const NavLink = styled(LinkS)`
     border-radius: 5px;
     background: #464646;
   }
+
+  &.active {
+    border-bottom: 3px solid #01bf71;
+  }
 `;
 
 export const NavBtnWrapper = styled.div`
