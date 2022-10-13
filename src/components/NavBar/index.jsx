@@ -11,10 +11,11 @@ import {
   MobileMenu,
 } from "./NavBarElements";
 
-const NavBar = ({ isOpen, toggle }) => {
+const NavBar = ({ scroll, isOpen, toggle }) => {
   return (
     <>
-      <Nav isOpen={isOpen}>
+      <Nav isOpen={isOpen} scroll={scroll}>
+        {console.log("Scroll " + scroll)}
         <NavBarContainer>
           <NavLogo>dalla</NavLogo>
           <NavMenu>

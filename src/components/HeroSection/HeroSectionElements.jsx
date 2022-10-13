@@ -9,6 +9,22 @@ export const HeroContainer = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 1;
+
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    z-index: 2;
+  }
 `;
 export const HeroBg = styled.div`
   position: absolute;
@@ -33,7 +49,7 @@ export const HeroContent = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 3;
   color: white;
 `;
 export const HeroH1 = styled.h1`
@@ -56,22 +72,11 @@ export const HeroP = styled.p`
   max-width: 600px;
 `;
 export const HeroBtnWrapper = styled.div`
-  background: #01bf71;
-  padding: 10px 20px;
-  border-radius: 50px;
-  cursor: pointer;
+  margin-top: 32px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-  }
 `;
-export const HeroBtn = styled.div``;
 export const ArrowForward = styled(MdArrowForward)`
   margin-left: 8px;
   font-size: 20px;

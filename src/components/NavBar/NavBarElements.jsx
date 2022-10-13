@@ -5,17 +5,17 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: transparent;
+  background: ${({ scroll }) => (scroll ? "black" : "transparent")};
   position: sticky;
   top: 0;
   color: #fff;
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: ${({ isOpen }) => (isOpen ? "0px" : "-80px")};
   width: 100%;
   z-index: 10;
 
   @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
+    transition: 0.5s all ease;
   }
 `;
 

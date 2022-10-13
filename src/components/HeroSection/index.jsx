@@ -3,7 +3,6 @@ import {
   ArrowForward,
   ArrowRight,
   HeroBg,
-  HeroBtn,
   HeroBtnWrapper,
   HeroContainer,
   HeroContent,
@@ -12,6 +11,7 @@ import {
   VideoBg,
 } from "./HeroSectionElements";
 import Video from "../../videos/video.mp4";
+import { Button } from "../ButtonElement";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -31,8 +31,10 @@ const HeroSection = () => {
           next payment.
         </HeroP>
         <HeroBtnWrapper onMouseEnter={onHover} onMouseLeave={onHover}>
-          <HeroBtn>Get Started</HeroBtn>
-          {hover ? <ArrowForward /> : <ArrowRight />}
+          <Button to="signup" primary="true" dark="true">
+            Get Started
+            {hover ? <ArrowForward /> : <ArrowRight />}
+          </Button>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
