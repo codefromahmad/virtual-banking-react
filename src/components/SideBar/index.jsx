@@ -31,12 +31,12 @@ const SideBar = ({ isOpen, toggle }) => {
           <MobileLink smooth={true} onClick={toggle} to="services">
             Services
           </MobileLink>
-          <MobileLink smooth={true} onClick={toggle} to="signin">
-            Sign In
+          <MobileLink smooth={true} onClick={toggle} to="signup">
+            Sign up
           </MobileLink>
         </MobileMenuWrapper>
         <NavBtnWrapper>
-          <NavBtn>Sign In</NavBtn>
+          <NavBtn to="signin">Sign In</NavBtn>
         </NavBtnWrapper>
       </SideBarContainer>
     </>
