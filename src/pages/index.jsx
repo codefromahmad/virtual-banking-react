@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer";
-import { FooterContainer } from "../components/Footer/FooterElements";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import {
@@ -11,7 +10,6 @@ import {
 import NavBar from "../components/NavBar";
 import ServiceSection from "../components/ServiceSection";
 import SideBar from "../components/SideBar";
-import img from "../images/svg-1.svg";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);

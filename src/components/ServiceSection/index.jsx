@@ -1,5 +1,4 @@
 import React from "react";
-import icon1 from "../../images/svg-4.svg";
 import { cards } from "./Data";
 import {
   ServiceContainer,
