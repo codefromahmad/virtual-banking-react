@@ -7,6 +7,7 @@ import {
   homeObjThree,
 } from "../components/InfoSection/Data";
 import NavBar from "../components/NavBar";
+import ServiceSection from "../components/ServiceSection";
 import SideBar from "../components/SideBar";
 import img from "../images/svg-1.svg";
 
@@ -33,6 +34,7 @@ const Home = () => {
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
+      <ServiceSection />
     </>
   );
 };

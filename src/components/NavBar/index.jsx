@@ -17,7 +17,9 @@ const NavBar = ({ scroll, isOpen, toggle }) => {
       <Nav isOpen={isOpen} scroll={scroll}>
         {console.log("Scroll " + scroll)}
         <NavBarContainer>
-          <NavLogo to="home">dalla</NavLogo>
+          <NavLogo smooth={true} to="home">
+            dalla
+          </NavLogo>
           <NavMenu>
             <NavLink smooth={true} to="about">
               About
