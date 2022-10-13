@@ -48,7 +48,7 @@ export const ServiceCard = styled.div`
   flex-direction: column;
   border-radius: 15px;
   padding: 2px 10px;
-  box-shadow: 0px 0px 3px #000;
+  box-shadow: 0px 0px 3px #999999;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 
