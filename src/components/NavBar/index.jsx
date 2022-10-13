@@ -35,7 +35,7 @@ const NavBar = ({ scroll, isOpen, toggle }) => {
             </NavLink>
           </NavMenu>
           <NavBtnWrapper>
-            <NavBtn>Sign In</NavBtn>
+            <NavBtn to="signin">Sign In</NavBtn>
           </NavBtnWrapper>
           <MobileMenuWrapper onClick={toggle}>
             <MobileMenu />
