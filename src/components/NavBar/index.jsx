@@ -17,12 +17,20 @@ const NavBar = ({ scroll, isOpen, toggle }) => {
       <Nav isOpen={isOpen} scroll={scroll}>
         {console.log("Scroll " + scroll)}
         <NavBarContainer>
-          <NavLogo>dalla</NavLogo>
+          <NavLogo to="home">dalla</NavLogo>
           <NavMenu>
-            <NavLink to="about">About</NavLink>
-            <NavLink to="discovery">Discovery</NavLink>
-            <NavLink to="services">Services</NavLink>
-            <NavLink to="signup">Sign Up</NavLink>
+            <NavLink smooth={true} to="about">
+              About
+            </NavLink>
+            <NavLink smooth={true} to="discovery">
+              Discovery
+            </NavLink>
+            <NavLink smooth={true} to="services">
+              Services
+            </NavLink>
+            <NavLink smooth={true} to="signup">
+              Sign Up
+            </NavLink>
           </NavMenu>
           <NavBtnWrapper>
             <NavBtn>Sign In</NavBtn>

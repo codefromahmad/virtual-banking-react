@@ -22,10 +22,18 @@ const SideBar = ({ isOpen, toggle }) => {
           </CloseIcon>
         </CloseWrapper>
         <MobileMenuWrapper>
-          <MobileLink to="about">About</MobileLink>
-          <MobileLink to="discovery">Discovery</MobileLink>
-          <MobileLink to="services">Services</MobileLink>
-          <MobileLink to="signin">Sign In</MobileLink>
+          <MobileLink smooth={true} onClick={toggle} to="about">
+            About
+          </MobileLink>
+          <MobileLink smooth={true} onClick={toggle} to="discovery">
+            Discovery
+          </MobileLink>
+          <MobileLink smooth={true} onClick={toggle} to="services">
+            Services
+          </MobileLink>
+          <MobileLink smooth={true} onClick={toggle} to="signin">
+            Sign In
+          </MobileLink>
         </MobileMenuWrapper>
         <NavBtnWrapper>
           <NavBtn>Sign In</NavBtn>

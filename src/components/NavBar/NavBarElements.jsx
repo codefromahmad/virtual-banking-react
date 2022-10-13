@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
+
 import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
@@ -29,9 +32,10 @@ export const NavBarContainer = styled.div`
   padding: 0px 24px;
 `;
 
-export const NavLogo = styled.div`
+export const NavLogo = styled(LinkR)`
   color: #fff;
   font-size: 1.5rem;
+  text-decoration: none;
   font-weight: bold;
   display: flex;
   justify-self: flex-start;
@@ -47,7 +51,7 @@ export const NavMenu = styled.div`
   }
 `;
 
-export const NavLink = styled.div`
+export const NavLink = styled(LinkS)`
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -65,16 +69,17 @@ export const NavBtnWrapper = styled.div`
   }
 `;
 
-export const NavBtn = styled.div`
+export const NavBtn = styled(LinkR)`
   color: #fff;
   background: #01bf71;
   border-radius: 50px;
   padding: 10px 20px;
+  text-decoration: none;
   cursor: pointer;
   /* transition: all 0.2s ease-in-out; */
 
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ea se-in-out;
     background: #fff;
     color: #010606;
   }

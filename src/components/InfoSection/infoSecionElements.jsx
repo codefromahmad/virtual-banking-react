@@ -29,7 +29,7 @@ export const InfoRow = styled.div`
     imgStart ? `'col2 col1'` : `'col1 col2'`};
 
   @media screen and (max-width: 760px) {
-    ${({ imgStart }) =>
+    grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;

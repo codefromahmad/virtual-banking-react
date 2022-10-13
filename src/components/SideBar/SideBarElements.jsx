@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
 
 export const SideBarContainer = styled.div`
   position: fixed;
@@ -11,7 +13,7 @@ export const SideBarContainer = styled.div`
   left: 0;
   transition: 0.3s all ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "1" : "-100%")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
   @media screen and (max-width: 768px) {
     display: block;
   }
@@ -66,7 +68,7 @@ export const MobileMenuWrapper = styled.div`
   }
 `;
 
-export const MobileLink = styled.div`
+export const MobileLink = styled(LinkS)`
   font-size: 1.3rem;
   cursor: pointer;
   display: flex;
@@ -85,7 +87,7 @@ export const NavBtnWrapper = styled.div`
   justify-content: center;
 `;
 
-export const NavBtn = styled.div`
+export const NavBtn = styled(LinkR)`
   color: #fff;
   background: #01bf71;
   border-radius: 50px;
